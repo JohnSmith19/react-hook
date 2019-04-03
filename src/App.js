@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Counter from "./useReducer/Counter";
-import InfoEffect from "./useEffect/InfoEffect";
+import Info from "./useReducer/Info";
 import ContextSample from "./useContext/ContextSample";
 
 const App = () => {
@@ -18,7 +18,7 @@ const App = () => {
         >
           {visible ? "invisible" : "visible"}
         </button>
-        {visible && <InfoEffect />}
+        {visible && <Info />}
         <Counter />
       </header>
       <ContextSample />
