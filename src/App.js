@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Counter from "./Counter";
-import Info from "./Info";
+import Counter from "./useState/Counter";
+import Info from "./useState/Info";
 
 class App extends Component {
   render() {
