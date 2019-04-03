@@ -20,11 +20,19 @@ const InfoEffect = () => {
     console.log("useEffect condition set", name);
   }, [name]);
 
+  // cleanup
   useEffect(() => {
     return () => {
       console.log("cleanup", name);
     };
   });
+
+  // cleanup - component unmount
+  useEffect(() => {
+    return () => {
+      console.log("cleanup unmount");
+    };
+  }, []);
 
   const onChangeName = e => {
     setName(e.target.value);
