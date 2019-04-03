@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Counter from "./useState/Counter";
 import InfoEffect from "./useEffect/InfoEffect";
+import ContextSample from "./useContext/ContextSample";
 
 const App = () => {
   const [visible, setVisible] = useState(false);
@@ -20,6 +21,7 @@ const App = () => {
         {visible && <InfoEffect />}
         <Counter />
       </header>
+      <ContextSample />
     </div>
   );
 };
