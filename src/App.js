@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Counter from "./useReducer/Counter";
-import Info from "./useReducer/Info";
-import ContextSample from "./useContext/ContextSample";
+import Counter from "./components/useReducer/Counter";
+import Info from "./components/useReducer/Info";
+import ContextSample from "./components/useContext/ContextSample";
+import Average from "./components/useState/Average";
 
 const App = () => {
   const [visible, setVisible] = useState(false);
@@ -20,6 +21,7 @@ const App = () => {
         </button>
         {visible && <Info />}
         <Counter />
+        <Average />
       </header>
       <ContextSample />
     </div>
