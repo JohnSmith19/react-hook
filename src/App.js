@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Counter from "./useState/Counter";
+import Counter from "./useReducer/Counter";
 import InfoEffect from "./useEffect/InfoEffect";
 import ContextSample from "./useContext/ContextSample";
 
