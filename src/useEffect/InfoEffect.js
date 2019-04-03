@@ -7,7 +7,7 @@ const InfoEffect = () => {
   // cpdm & cpdu
   useEffect(() => {
     console.log("rendering complete!!");
-    console.log({ name, nickname });
+    console.log("useEffect", { name, nickname });
   });
 
   // cpdm
@@ -17,8 +17,14 @@ const InfoEffect = () => {
 
   // cpdu
   useEffect(() => {
-    console.log("useEffect", name);
+    console.log("useEffect condition set", name);
   }, [name]);
+
+  useEffect(() => {
+    return () => {
+      console.log("cleanup", name);
+    };
+  });
 
   const onChangeName = e => {
     setName(e.target.value);
