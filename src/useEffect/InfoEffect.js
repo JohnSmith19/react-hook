@@ -15,6 +15,11 @@ const InfoEffect = () => {
     console.log("component mount");
   }, []);
 
+  // cpdu
+  useEffect(() => {
+    console.log("useEffect", name);
+  }, [name]);
+
   const onChangeName = e => {
     setName(e.target.value);
   };
