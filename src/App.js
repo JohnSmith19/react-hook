@@ -4,7 +4,7 @@ import "./App.css";
 import Counter from "./components/useReducer/Counter";
 import Info from "./components/useReducer/Info";
 import ContextSample from "./components/useContext/ContextSample";
-import Average from "./components/useState/Average";
+import Average from "./components/useMemo/Average";
 
 const App = () => {
   const [visible, setVisible] = useState(false);
